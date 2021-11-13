@@ -8,6 +8,7 @@ body {
  align-items: center;
 }
 
+/* giving cotainer the glassy feeling */
 .container {
  height: 550px;
  width: 850px;
@@ -20,6 +21,7 @@ body {
  padding: 20px 20px 10px 30px;
 }
 
+/* on hoveer the container come closer to the screen */
 .container:hover{
  transform: scale(1.04);
  backdrop-filter: blur(10px);
@@ -27,6 +29,8 @@ body {
  box-shadow: 10px 10px 40px rgba(0,0,0,0.7);
 }
 
+
+/* styling the h1 and paragraphs */
 .header {
  font-size: 45px;
  text-indent: 50px;
