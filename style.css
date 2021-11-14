@@ -33,7 +33,7 @@ body {
 /* styling the h1 and paragraphs */
 .header {
  font-size: 45px;
- text-indent: 50px;
+ text-indent: 100px;
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .des {
