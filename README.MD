@@ -10,7 +10,7 @@ Hello there! This is a form collecting application that takes your birthday deta
 
 ## Setup/Installation Requirements
 
-- Clone the repo {git clone }
+- Clone the repo {git clone https://github.com/Hussein-omar-osman/Akon-name-generator.git}
 - to use, just fill the form and you will know you Akon name.
 - in a simple
 - easy-to-understand
