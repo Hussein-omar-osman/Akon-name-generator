@@ -5,7 +5,7 @@ function formInput () {
  let genders = document.getElementsByName("gender");
 
  // function to get gender
- function getGender () {
+ function genderValue () {
    for (let gender of genders){
      if (gender.checked){
        return gender.value;
@@ -13,8 +13,8 @@ function formInput () {
    }
  }
 
- let myGenderValue = getGender();
- console.log(myGenderValue);
+ let myGender = genderValue();
+ console.log(myGender);
 
  // validation functions
  function monthValidator () {
@@ -74,11 +74,11 @@ function formInput () {
 
  console.log(index);
 
- if (myGenderValue == "male" && monthValid && dayValid) {
+ if (myGender == "male" && monthValid && dayValid) {
   document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index];
   document.getElementById('result').style.fontSize = "25px";
   return false;
-} else if (myGenderValue == "female" && monthValid && dayValid) {
+} else if (myGender == "female" && monthValid && dayValid) {
   document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index];
   document.getElementById('result').style.fontSize = "25px";
   return false;
