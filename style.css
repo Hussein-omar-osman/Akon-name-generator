@@ -38,5 +38,15 @@ body {
 }
 .des {
  font-size: 18px;
+}
 
+/* styling form input */
+.inputplace {
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+  box-shadow: 2px 2px #868080;
+}
+.gendertext {
+ font-size: 18px;
 }
