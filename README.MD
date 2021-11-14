@@ -17,7 +17,7 @@ Hello there! This is a form collecting application that takes your birthday deta
 
 ## Live link
 
-- link 
+- link https://hussein-omar-osman.github.io/Akon-name-generator/
 
 ## Known Bugs
 
