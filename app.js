@@ -1,7 +1,7 @@
-function getAkanName () {
- let yearOfBirth = document.getElementById("year-input").value;
- let monthOfBirth = Number(document.getElementById("month-input").value);
- let dayOfBirth = Number(document.getElementById("day-input").value);
+function formInput () {
+ let yearOfBirth = document.getElementById("yearborn").value;
+ let monthOfBirth = Number(document.getElementById("monthborn").value);
+ let dayOfBirth = Number(document.getElementById("dayborn").value);
  let genders = document.getElementsByName("gender");
 
  // function to get gender
@@ -43,15 +43,14 @@ function getAkanName () {
    }
  }
 
- //validation variables
  let monthValid = monthValidator();
  let dayValid = dayValidator();
 
- //formula to determine day of birth (Sunday = 1, Monday = 2)etc..
+ //formula to determine day
  let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
- //creating arrays of Akan names for males & females and days of the week
+ //creating arrays of Akan names for males & females and days
  let daysOfWeek = [
    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
  ];
@@ -77,15 +76,11 @@ function getAkanName () {
 
  if (myGenderValue == "male" && monthValid && dayValid) {
   document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index];
-  // document.getElementById('display-name').textContent = "Here is your Akan name: ";
   document.getElementById('result').style.fontSize = "25px";
-  // document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
   return false;
 } else if (myGenderValue == "female" && monthValid && dayValid) {
   document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index];
-  // document.getElementById('display-name').textContent = "Here is your Akan name: ";
   document.getElementById('result').style.fontSize = "25px";
-  // document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
   return false;
 } else {
   alert("You entered an invalid day or month, please try again");
