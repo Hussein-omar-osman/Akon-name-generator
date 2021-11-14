@@ -50,3 +50,25 @@ body {
 .gendertext {
  font-size: 18px;
 }
+#get-name{
+ border-radius: 20px;
+ color: #000000;
+ background-color: #dbd8c8;
+ text-align: center;
+ border: solid 1px #868080;
+ width: 108px;
+ height: 30px;
+ font-size: 13px;
+ box-shadow: 2px 2px #868080;
+}
+.clear {
+ border-radius: 20px;
+ color: #000000;
+ background-color: #dbd8c8;
+ text-align: center;
+ border: solid 1px #868080;
+ width: 90px;
+ height: 30px;
+ font-size: 13px;
+ box-shadow: 2px 2px #868080;
+}
