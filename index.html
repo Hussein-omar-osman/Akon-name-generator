@@ -9,36 +9,42 @@
 <body>
  <!-- container with the glassy feeling-->
  <div class="container">
-  <h1 class="header">Akan name generator!</h1>
-  <p class="des">Hi there! This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
-  <p class="des">To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.</p>
-  <!-- creating the forms -->
-  <form action="">
-   <label for="yearBorn">Year:</label>
-   <input type="number" id="yearBorn" class="inputplace" name="yearBorn" min="1000" max="9999" placeholder="YYYY" required>
-   <label for="monthBorn">Month:</label>
-   <input type="number" id="monthBorn" class="inputplace" name="monthBorn" min="1" max="12" placeholder="MM" required>
-   <label for="dayBorn">Day:</label>
-   <input type="number" id="dayBorn" class="inputplace" name="dayBorn" min="1" max="31" placeholder="DD" required>
-   <br>
-   <label for="gender">
-    <p class="gendertext">Select your gender: </p>
-    Male
-    <input id="male-input" type="radio" name="gender" value="male" required>
-    Female
-    <input id="female-input" type="radio" name="gender" value="female" required>
-  </label>
-  <br>
-  <br>
-  <input id="get-name" type="submit" name="" value="Generate name">
-  <br>
-  <br>
+  <h1 class="header">The Akan name generator!</h1>
+  <p class="des">Hello there! This is a web application that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. <a class="research" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Akan names</a> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. </p>
+  <p class="des">To find out what your Akan name is, proceed to filling the form below and clicking the generate name button.
+  <form class="myform" onsubmit="return getAkanName()">
+    <label for="year-of-birth">
+      Year:
+      <input id="year-input" type="number" class="inputplace" name="year-of-birth" placeholder="YYYY" value="" required>
+    </label>
+    <label for="month-of-birth">
+      Month:
+      <input id="month-input" type="number" class="inputplace" name="month-of-birth" placeholder="MM" value="" required>
+    </label>
+    <label for="day-of-birth">
+      Day:
+      <input id="day-input" type="number" class="inputplace" name="day-of-birth" placeholder="DD" value="" required>
+    </label>
+    <br>
+    <label for="gender">
+      <p>Select your gender: </p>
+      Male
+      <input id="male-input" type="radio" name="gender" value="male" required>
+      Female
+      <input id="female-input" type="radio" name="gender" value="female" required>
+
+    </label>
+    <br><br>
+    <input id="get-name" type="submit" name="" value="Generate name">
+    <br><br>
   </form>
   <form onsubmit="return clearInput()">
-   <input class="clear" type="submit" value="Clear input">
- </form>
- <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
- <p id="result"></p>
+    <input class="clear" type="submit" value="Clear input">
+  </form>
+
+
+  <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+  <p id="result"></p>
  </div>
  <script src="app.js"></script>
 </body>

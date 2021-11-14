@@ -43,7 +43,7 @@ body {
 /* styling form input */
 .inputplace {
   border-radius: 5px;
-  width: 60px;
+  width: 100px;
   height: 20px;
   box-shadow: 2px 2px #868080;
 }
