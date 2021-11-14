@@ -75,4 +75,19 @@ function getAkanName () {
 
  console.log(index);
 
- 
+ if (myGenderValue == "male" && monthValid && dayValid) {
+  document.getElementById('result').textContent = "Your Akan name is " + maleAkanNames[index];
+  // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+  document.getElementById('result').style.fontSize = "25px";
+  // document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
+  return false;
+} else if (myGenderValue == "female" && monthValid && dayValid) {
+  document.getElementById('result').textContent = "Your Akan name is " + femaleAkanNames[index];
+  // document.getElementById('display-name').textContent = "Here is your Akan name: ";
+  document.getElementById('result').style.fontSize = "25px";
+  // document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
+  return false;
+} else {
+  alert("You entered an invalid day or month, please try again");
+}
+}
